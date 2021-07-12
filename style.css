@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    width: 100%;
+    font-family: cursive;
+  }
+  header{
+    min-height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #bookikon{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+  }
+  nav ul{
+    font-size: 20px;
+    width: 500px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  #basket{
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 40px;
+    overflow: hidden;
+  }
+  #basket, #phone{
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+  #basketikon, #phoneikon{
+    width: 30px;
+    height: 30px;
+  }
+  #menuikon{
+    display: none;
+    width: 40px;
+  }
+  .line{
+    margin: 5px;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  #home{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image:url("https://img.wallpapersafari.com/desktop/1366/768/61/74/aymQ1w.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #aboutus{
+    position: relative;
+     width: 100%;
+     height: 800px;
+    background-image:url("https://www.fortunebuilders.com/wp-content/uploads/2016/01/vintage-furniture-1024x683.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #headparent{
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    left: 20%;
+    font-size: 45px;
+  }
+  #text{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    font-size: 45px;
+    width: 40%;
+    height: 500px;
+    overflow: hidden;
+  }
+  #text p{
+    margin: 20px;
+    font-size: 30px;
+    font-family: 'Festive', cursive;
+  }
+  #store{
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(245,245,245);
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  h2{
+    text-align: center;
+    font-size: 45px;
+  }
+  #choose{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #choose h3:hover{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+  }
+  #choose h3{
+    font-size: 25px;
+    margin: 20px 10px;
+    padding: 5px 18px;
+    border: solid 1px black;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+  }
+  #searchbox{
+    margin: 50px auto;
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #searchikon{
+    width: 30px;
+    height: 30px;
+  }
+  #search{
+    font-size: 22px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #container{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .box{
+    width: 220px;
+    height: 300px;
+    margin: 20px;
+    border: solid 1px black;
+    background-color: rgba(150,150,150, 0.4);
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0;
+    border-radius: 5px;
+  }
+  .book{
+    width: 100%;
+    height: 85%;
+    transition: transform 1s ease-out;
+  }
+  .book:hover{
+    transform: scale(1.13);
+  }
+  .blur{
+    filter: blur(8px);
+  }
+  .bookname{
+    display: none;
+  }
+  .details{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #add{
+    height: 25px;
+    width: 50px;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+  }
+  #add:hover{
+    background-color: black;
+    color: white;
+  }
+  @media screen and (max-width: 700px) {
+    #menuikon {
+      display: block;
+    }
+    nav {
+      background-color: white;
+      position: absolute;
+      z-index: 5;
+      top: 60px;
+      padding: 20px;
+      width: 100%;
+    }
+  }
